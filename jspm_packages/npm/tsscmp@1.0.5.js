@@ -1,0 +1,1 @@
+module.exports = require("npm:tsscmp@1.0.5/lib/index.js");

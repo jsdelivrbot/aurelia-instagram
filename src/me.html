@@ -1,0 +1,14 @@
+<!-- src/me.html  -->
+<template>
+  <div class="jumbotron">
+    <h2 class="text-center">${heading}</h2>
+    <p class="text-center">
+      <img src.bind="me.profile_picture" alt="" style="border-radius: 100px">
+    </p>
+    <p class="text-center">
+      <strong>Followed by: </strong> ${me.counts.followed_by};
+      <strong>Following: </strong> ${me.counts.follows};
+      <strong>Media: </strong> ${me.counts.media};
+    </p>
+  </div>
+</template>

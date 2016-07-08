@@ -1,0 +1,21 @@
+<!-- src/home.html  -->
+<template>
+  <div class="jumbotron">
+    <h2 class="text-center">${heading}</h2>
+    <p class="text-center">
+      <a click.trigger="signin()" class="btn btn-primary">Login</a>
+      <a click.trigger="signout()" class="btn btn-warning">Logout</a>
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="col-md-4" repeat.for="post of recent">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src.bind="post.images.standard_resolution.url" class="img-responsive" alt="" />
+        </div>
+        <div class="panel-footer"><strong>${post.caption.from.full_name} </strong> ${post.caption.text}</div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,1 @@
+module.exports = require("npm:jsonp@0.0.4/index");

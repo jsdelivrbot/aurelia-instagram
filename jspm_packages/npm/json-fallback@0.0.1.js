@@ -1,0 +1,1 @@
+module.exports = require("npm:json-fallback@0.0.1/index");

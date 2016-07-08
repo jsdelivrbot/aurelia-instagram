@@ -1,0 +1,1 @@
+module.exports = require("npm:batch@0.5.3/index");
